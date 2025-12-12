@@ -12,7 +12,7 @@ class Student:
         
     def get_status(self):
         if self.__rating == None:
-            return 'qiymat o\'rnatilmagan!'
+            return 'qiymat o\'rnatilmagan yoki noto\'g\'ri berilgan!'
 
         if self.__rating > 60:
             return 'Passed'
@@ -20,9 +20,9 @@ class Student:
             return 'Failed'
 
 student_1 = Student('Sanjarbek')
-    
+
 print(student_1.name)
 
-student_1.set_rating(101)
+student_1.set_rating(77)
 
 print(student_1.get_status())
